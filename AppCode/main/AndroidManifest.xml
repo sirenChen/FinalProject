@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.siren.finalprojectclient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="E-Parking"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MeterMonitorActivity"
+            android:label="Meter List" />
+        <activity
+            android:name=".PaymentAccountActivity"
+            android:label="Payment"
+            android:parentActivityName=".MeterMonitorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MeterMonitorActivity" />
+        </activity>
+        <activity
+            android:name=".PaymentCreditActivity"
+            android:label="Payment"
+            android:parentActivityName=".MeterMonitorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MeterMonitorActivity" />
+        </activity>
+
+        <activity
+            android:name=".TimeCheckActivity"
+            android:label="Check Remaining Time"
+            android:parentActivityName=".MeterMonitorActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MeterMonitorActivity" />
+        </activity>
+    </application>
+
+</manifest>

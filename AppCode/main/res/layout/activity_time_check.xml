@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.siren.finalprojectclient.TimeCheckActivity"
+    android:background="#e6e6e6"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/meter_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/meter_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <EditText
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+
+            android:id="@+id/check_time_text"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+
+            android:textAlignment="center"
+
+            android:hint="RFID/UserName"
+            android:background="#ffffff"/>
+
+
+        <Button
+            android:id="@+id/payment_submit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/check_time_text"
+            android:background="@color/colorPrimary"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="submit"
+
+            android:text="Check Time"
+            android:textColor="#fffff0"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+
+    android:minHeight="100dp"
+
+    android:layout_height="100dp">
+
+
+    <TextView
+        android:id="@+id/list_text_left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+
+        android:text="10"
+        android:gravity="center"
+
+        android:textColor="#111"
+        android:background="@drawable/ic_radio_button_unchecked_black_24dp"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/list_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="62dp"
+
+        >
+
+        <TextView
+            android:id="@+id/list_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Title Title Title"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/list_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="neirong neirong neirong "
+
+            android:layout_alignLeft="@id/list_status"
+            android:layout_below="@id/list_status"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/list_image_right"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+
+        android:layout_centerVertical="true"
+
+        android:layout_marginRight="16dp"
+
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_alignLeft="@id/list_item_text"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDivider"/>
+
+
+</RelativeLayout>

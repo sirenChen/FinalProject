@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.siren.finalprojectclient.MainActivity">
+
+    <item
+        android:id="@+id/check_time"
+        android:orderInCategory="100"
+        android:title="check"
+        app:showAsAction="always"
+        android:icon="@drawable/check_time"
+        />
+
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.siren.finalprojectclient.MainActivity">
+
+    <item
+        android:id="@+id/payment_credit"
+        android:orderInCategory="100"
+        android:title="credit card"
+        app:showAsAction="always"
+        android:icon="@drawable/credit_card"
+        />
+
+</menu>
